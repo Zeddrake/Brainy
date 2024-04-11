@@ -1,0 +1,169 @@
+/* Import fontu Google Fonts pro profesionální vzhled textu */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.blog-container {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif; /* Použití fontu Roboto pro celou stránku */
+}
+
+.post-form {
+  margin-bottom: 20px;
+}
+
+.post-form input,
+.post-form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post-form textarea {
+  height: 100px;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.post {
+  background-color: #f9f9f9; /* Světlejší barva pro pozadí */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Mírně zvýrazněný stín */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animace pro plynulé změny */
+}
+
+.post:hover {
+  transform: translateY(-5px); /* Animace zvýraznění při najetí myší */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Zvýrazněný stín při najetí myší */
+}
+
+.post h3 {
+  margin-top: 0;
+  font-size: 1.5em; /* Zvětšená velikost nadpisu */
+}
+
+.post p {
+  margin-bottom: 10px; /* Větší mezery mezi odstavci */
+}
+
+.post-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.post-actions button {
+  padding: 8px 16px; /* Větší poloměr zaoblení a odstupy pro tlačítka */
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Animace pro plynulé změny */
+}
+
+.post-actions button.favorite {
+  background-color: #ff3333;
+}
+
+.post-actions button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.comment-section {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.comment-section input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.comment-section button {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.comment-section button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.comments {
+  margin-top: 20px;
+}
+
+.comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1; /* Světlejší barva pro pozadí komentářů */
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Větší mezery mezi komentáři */
+}
+
+.delete-comment {
+  cursor: pointer;
+  transition: color 0.3s ease; /* Animace pro plynulé změny */
+}
+
+.delete-comment:hover {
+  color: #ff3333; /* Zvýrazněná barva pro odstranění komentáře při najetí myší */
+}
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; /* Vetší mezera mezi tlačítky */
+}
+
+.add-post-btn {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.add-post-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.close {
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.close:hover {
+  background-color: #fff;
+  color: #000;
+}

@@ -1,0 +1,33 @@
+/* Stylizace pro hlavní obsah stránky */
+.main-content {
+    flex: 1; /* Obsah stránky bude flexibilní, aby mohl růst, pokud je třeba */
+  }
+  
+  /* Styly pro copyright lištu */
+  .copyright {
+    position: fixed; /* Pozice bude fixní */
+    bottom: 0; /* Zobrazení copyrightu na spodní části */
+    left: 0; /* Zarovnání vlevo */
+    width: 100%; /* Šířka bude 100% */
+    padding: 10px 20px; /* Odsazení */
+    background-color: #000; /* Barva pozadí */
+    color: #fff; /* Barva textu */
+    text-align: center; /* Zarovnání textu na střed */
+  }
+  
+  
+  .copyright p {
+    margin: 0; /* Odstranění mezery kolem textu */
+  }
+  
+  /* Stylizace odkazu */
+  .copyright a {
+    color: #fff; /* Bílá barva pro text odkazu */
+    text-decoration: none; /* Odstranění podtržení pod odkazem */
+  }
+  
+  /* Stylizace odkazu při najetí myší */
+  .copyright a:hover {
+    text-decoration: underline; /* Podtržení pod odkazem při najetí myší */
+  }
+  

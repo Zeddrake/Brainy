@@ -1,0 +1,233 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+  background-color: #000; /* Černá barva na podkladu */
+  color: #fff; /* Bílá barva pro text */
+}
+
+.brand {
+  font-size: 1.5rem;
+}
+
+.brand-text {
+  font-weight: bold; /* Tučné písmo pro zvýraznění */
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-right: 20px;
+}
+
+.nav-link-item {
+  color: #fff; /* Bílá barva pro text */
+  text-decoration: none;
+  padding: 10px 20px; /* adding pro větší tlačítka */
+  background-color: #fff; /* Bílá barva na podkladu */
+  color: #000; /* Černá barva pro text */
+  border: 1px solid #fff; /* Bílá barva pro ohraničení */
+  border-radius: 5px; /* Zakulacené hrany */
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Plynulá změna barvy */
+}
+
+.nav-link-item:hover {
+  background-color: #000; /* Černá barva pozadí při najetí myší */
+  color: #fff; /* Bílá barva textu při najetí myší */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #fff; /* Bílá barva pro ohraničení */
+  color: #000; /* Černá barva pro text */
+}
+
+.search-button {
+  padding: 5px 10px;
+  background-color: #fff; /* Bílá barva na podkladu */
+  color: #000; /* Černá barva pro text */
+  border: 1px solid #fff; /* Bílá barva pro ohraničení */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #000; /* Černá barva pozadí při najetí myší */
+  color: #fff; /* Bílá barva textu při najetí myší */
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.username-dropdown {
+  background-color: transparent;
+  color: #fff; /* Bílá barva pro text */
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000; /* Černá barva na podkladu */
+  min-width: 120px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #fff; /* Bílá barva pro text */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #fff; /* Bílá barva na podkladu po najetí myší */
+  color: #000; /* Černá barva pro text */
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.auth-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff; /* Bílá barva na podkladu */
+  color: #000; /* Černá barva pro text */
+  border: 1px solid #fff; /* Bílá barva pro ohraničení */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.auth-link:hover {
+  background-color: #000; /* Černá barva pozadí při najetí myší */
+  color: #fff; /* Bílá barva textu při najetí myší */
+}
+
+.auth-link-divider {
+  margin: 0 8px; /* Menší mezera mezi tlačítky */
+}
+
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #000;
+}
+
+.dropdown-item {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000; /* Bílá barva na podkladu */
+  color: #000; /* Černá barva pro text */
+  border: 1px solid #fff; /* Bílá barva pro ohraničení */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #000; /* Černá barva pozadí při najetí myší */
+  color: #fff; /* Bílá barva textu při najetí myší */
+}
+.username {
+  display: inline-block;
+  padding: 10px 20px; /* Změněný padding pro zmenšení textu */
+  background-color: #000; /* Černá barva na podkladu */
+  color: #fff; /* Bílá barva pro text */
+  border: 1px solid #fff; /* Bílá barva pro ohraničení */
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.username:hover {
+  background-color: #fff; /* Bílá barva pozadí při najetí myší */
+  color: #000; /* Černá barva textu při najetí myší */
+}
+
+.auth-link-divider {
+  margin: 0 8px; /* Menší mezera mezi tlačítky */
+}
+@media screen and (max-width: 730px) { 
+  .nav-links.show {
+    
+    flex-direction: column; /* Zarovná odkazy ve sloupci */
+    align-items: flex-start; /* Zarovná odkazy nalevo */
+    margin-right: 0; /* Odstraní margin mezi navigačními odkazy */
+  }
+
+  .nav-link {
+    margin-right: 0; /* Odstraní margin mezi odkazy */
+    
+  }
+
+  .nav-link-item {
+    padding: 6px 10px; /* Zmenší padding pro tlačítka v navigaci */
+    font-size: 12px; /* Zmenší velikost textu tlačítek */
+  }
+
+  .search-container,
+  .user-actions {
+    display: none; /* Skryje vyhledávací pole a uživatelské akce */
+  }
+
+  .search-container.show,
+  .user-actions.show {
+    display: block; 
+  }
+}
+@media screen and (min-width: 731px) and (max-width: 1030px) {
+  .nav-links.show {
+    flex-direction: row; /* Ponechá odkazy ve flexibilním řádku */
+    align-items: center; /* Zarovná odkazy na střed */
+    margin-right: 20px; /* Obnoví margin mezi navigačními odkazy */
+  }
+
+  .nav-link {
+    margin-right: 20px; /* Obnoví margin mezi odkazy */
+  }
+
+  .nav-link-item {
+    padding: 10px 20px; /* Zachovává padding pro tlačítka v navigaci */
+    font-size: 1rem; /* Zachovává velikost textu tlačítek */
+  }
+
+   .search-container {
+    display: none; /* Skryje vyhledávací pole a uživatelské akce */
+  }
+
+  .search-container.show,
+  .user-actions.show {
+    display: none; /* Skryje vyhledávací pole a uživatelské akce v případě potřeby */
+  }
+}

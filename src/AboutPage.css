@@ -1,0 +1,61 @@
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* Bílá barva pozadí */
+  padding: 50px; /* Odstup od okraje stránky */
+}
+
+.about-content {
+  width: 100%; /* Roztažení obsahu na celou šířku */
+  max-width: 800px; /* Maximální šířka obsahu */
+  text-align: center;
+  border-radius: 10px; /* Zaoblené hrany */
+  
+}
+
+.about-title {
+  font-size: 2.5rem; /* Velikost písma */
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000; /* Černá barva textu */
+}
+
+.about-subtitle {
+  font-size: 1.2rem; /* Velikost písma */
+  margin-bottom: 30px;
+  color: #000; /* Černá barva textu */
+}
+
+.about-description {
+  font-size: 1rem; /* Velikost písma */
+  color: #000; /* Černá barva textu */
+  line-height: 1.6;
+}
+
+.about-description p {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link-item {
+  display: inline-block;
+  padding: 8px 16px; /* Menší padding */
+  margin-right: 10px; /* Mezera mezi tlačítky */
+  background-color: #000; /* Černá barva na pozadí */
+  color: #fff; /* Bílá barva pro text */
+  border-radius: 5px; /* Zaoblené hrany */
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Plynulá změna barvy */
+}
+
+.nav-link-item:hover {
+  background-color: #fff; /* Bílá barva pozadí při najetí myší */
+  color: #000; /* Černá barva textu při najetí myší */
+}
+
+

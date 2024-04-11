@@ -1,0 +1,11 @@
+version: '3'
+services:
+  frontend:
+    container_name: "brainy"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
